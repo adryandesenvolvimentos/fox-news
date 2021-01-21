@@ -10,6 +10,7 @@ async function get_news(req, response) {
     const date = new Date()
 
     response.setHeader('Cache-Control', 's-maxage=600, stale-while-revalidate')
+    response.setHeader('Access-Control-Allow-Origin', '*')
 
     response.statusCode = 200;
     response.json({
