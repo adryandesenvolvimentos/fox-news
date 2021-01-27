@@ -16,4 +16,4 @@ async function get_weather(req, response) {
     });
 }
 
-export default get_news;
+export default get_weather;
